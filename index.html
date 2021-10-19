@@ -7,63 +7,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="container-top">
-            <div class="header-top">
+    <main>
+        <div class="header-dx">
+            <div class="btn">
+                <a class="btn-upgrade">Effettua l'upgrade</a>
+            </div>
+        </div>
+
+        <aside class="aside">
+            <nav class="aside-top">
+                <ul>
+                    <li>
+                        <img src="img/logo-small.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="/img/home.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/search.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/libreria.svg" alt="">
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="aside-bottom">
+                <ul>
+                    <li>
+                        <img id="download" src="img/download.svg" alt="">
+                    </li>
+                    <li>
+                        <img id="profile" src="img/profile.svg" alt="">
+                    </li>
+                </ul>
+            </nav>
+
+        </aside>
+        <nav>
+            <ul class="main-nav-ul">
+                <li>prova</li>
+                <li>prova</li>
+                <li>prova</li>
+                <li>prova</li>
+                <li>prova</li>
+                <li>prova</li>
+                <li>prova</li>
+            </ul>
+        </nav>
+        <div class="recently-played">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-sx">
+            <div class="album">
+                <img src="img/sinister.jpeg" alt="" width="60">
+
+                <div class="titolo">
+                    <p>Sinister</p>
+                    <p>brano</p>
+                    <p>nome</p>
+                </div>
+
+            </div>
+            <div class="icon-container">
+                <div class="center">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                </div>
 
 
             </div>
 
         </div>
 
-    </header>
+        <div class="footer-center">
+            <div class="top">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="far fa-play-circle bigger"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo"></i>
+            </div>
 
-    <main class="container-main">
-        <aside class="main-left">
-            <nav class="nav-left-top">
-                <ul>
-                    <li>
-                        <i class="fab fa-spotify"></i>
-                    </li>
-                    <li>
-                        <i class="fas fa-home"></i>
-                    </li>
-                    <li>
-                        <i class="fas fa-search"></i>
-                    </li>
-                    <li>
-                        <i class="fas fa-grip-lines-vertical"></i>
-                    </li>
-                </ul>
-            </nav>
+            <div class="bottom">
+                <div class="minute">0.24</div>
+                <div class="progress-bar">
+                    <div class="progress-line"></div>
+                </div>
+                <div class="minute">3.30</div>
 
-            <nav class="nav-left-top">
-                <ul>
-                    <li>
-                        <i id="download" class="far fa-arrow-alt-circle-down"></i>
-                    </li>
-                    <li>
-                        <i class="far fa-user"></i>
+            </div>
 
-                    </li>
-                </ul>
-            </nav>
-        </aside>
+        </div>
 
-
-    </main>
-
-    <footer>
-
+        <div class="footer-dx"></div>
     </footer>
 
 </body>

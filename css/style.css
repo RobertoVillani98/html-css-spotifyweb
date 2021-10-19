@@ -7,69 +7,191 @@
 body {
  font-family: "Roboto", sans-serif;
 }
-
-.container-top {
+main {
+ margin-left: 50px;
+ margin-top: 70px;
+ height: 100%;
+ background-color: red;
+}
+.main-nav-ul {
+ display: flex;
+ list-style: none;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+.main-nav-ul li {
+ padding-left: 20px;
+}
+.recently-played {
+ display: flex;
+ height: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ height: 300px;
+}
+@media only screen and (min-width: 600px) {
+ .recently-played {
+  flex-direction: row;
+ }
+}
+.box {
+ border: 1px solid black;
+ width: 100px;
+ height: 100px;
+ max-height: 100px;
+ min-width: 100px;
+ margin-right: 20px;
+}
+.header-dx {
+ height: 70px;
+ width: 100vw;
  display: flex;
  justify-content: flex-end;
-}
-
-.header-top {
- height: 80px;
- width: 95%;
- background-color: grey;
+ background-color: rgb(9, 11, 19);
  position: fixed;
  top: 0;
- z-index: 999;
+ left: 0;
+ align-items: center;
 }
 
-.main-left {
- width: 5%;
- height: 95%;
- background-color: black;
+.btn-upgrade {
+ border: 1px solid white;
+ border-radius: 50px;
+ padding: 10px 20px;
+ color: white;
+ text-transform: uppercase;
+ font-size: 12px;
+ margin-right: 5px;
+}
+
+.aside {
+ height: calc(100% - 70px);
+ width: 50px;
  display: flex;
  flex-direction: column;
  justify-content: space-between;
+ background-color: black;
+ position: fixed;
+ top: 0;
+ left: 0;
+ text-align: center;
+ padding: 10px 0;
 }
 
-.nav-left-top {
- margin: 5px 0;
+.aside-top img {
+ width: 50%;
+ margin-bottom: 5px;
 }
 
-.nav-left-top ul li {
- color: white;
-}
-
-.nav-left-top i {
- display: flex;
- justify-content: center;
- margin: 10px 0;
-}
-
-#download {
- font-size: 8px;
+img#download {
+ width: 15px;
  margin-bottom: 15px;
 }
 
-.container-main {
- width: 100%;
- height: 90vh;
- background-color: red;
+img#profile {
+ width: 35%;
+ background-color: grey;
+ border-radius: 10px;
 }
 
 footer {
- height: 15%;
+ height: 70px;
  width: 100%;
- background-color: blue;
  position: fixed;
  bottom: 0;
+ display: flex;
+ padding-left: 5px;
+ padding-right: 5px;
 }
 
-@media screen and (min-width: 800px) {
- .main-left {
-  width: 20%;
- }
+.footer-sx {
+ height: 100%;
+ width: 25%;
+ background-color: rgb(216, 216, 110);
+ display: flex;
+}
 
- .header-top {
-  width: 80%;
- }
+.album {
+ display: flex;
+ align-items: center;
+ height: 100%;
+}
+
+.album img {
+ width: 30px;
+}
+.center {
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ height: 100%;
+}
+.icon-container {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.titolo {
+ display: flex;
+ margin-left: 5px;
+ flex-direction: column;
+ font-size: 6px;
+}
+
+.bigger {
+ font-size: 30px;
+}
+
+.footer-center {
+ height: 100%;
+ width: 50%;
+ background-color: tomato;
+ display: flex;
+ flex-direction: column;
+}
+
+.top {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.bottom {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.minute {
+ margin-inline: 5px;
+ color: white;
+}
+
+.top i {
+ color: white;
+ margin: 10px 11px 5px 10px;
+}
+
+.progress-bar {
+ height: 5px;
+ width: 300px;
+ border-radius: 10px;
+ background-color: lightgray;
+ position: relative;
+}
+
+.progress-line {
+ position: absolute;
+ left: 0;
+ bottom: 0;
+ height: 5px;
+ width: 40%;
+ background-color: #fff;
+ border-radius: 10px;
+}
+
+.footer-dx {
+ height: 100%;
+ width: 25%;
+ background-color: lightgreen;
 }
