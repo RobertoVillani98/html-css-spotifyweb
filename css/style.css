@@ -15,7 +15,7 @@ body {
 
 .header-top {
  height: 80px;
- width: 90%;
+ width: 95%;
  background-color: grey;
  position: fixed;
  top: 0;
@@ -23,9 +23,31 @@ body {
 }
 
 .main-left {
- width: 10%;
- height: 100%;
+ width: 5%;
+ height: 95%;
  background-color: black;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.nav-left-top {
+ margin: 5px 0;
+}
+
+.nav-left-top ul li {
+ color: white;
+}
+
+.nav-left-top i {
+ display: flex;
+ justify-content: center;
+ margin: 10px 0;
+}
+
+#download {
+ font-size: 8px;
+ margin-bottom: 15px;
 }
 
 .container-main {
@@ -35,7 +57,7 @@ body {
 }
 
 footer {
- height: 80px;
+ height: 15%;
  width: 100%;
  background-color: blue;
  position: fixed;
