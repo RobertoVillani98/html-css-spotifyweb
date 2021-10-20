@@ -97,17 +97,26 @@ img#profile {
 }
 
 .container-box {
- height: 100%;
  display: flex;
  flex-wrap: wrap;
- padding: 0 10px;
  margin-top: 30px;
+ margin-bottom: 100px;
+ padding: 0 10px;
+ overflow: hidden;
+}
+
+.container-box-2 {
+ display: flex;
+ flex-wrap: wrap;
+ margin-top: 30px;
+ overflow: hidden;
 }
 
 .box {
  width: 190px;
  height: 250px;
  margin: 0 5px;
+ overflow-y: hidden;
 }
 
 .box img {
@@ -126,6 +135,30 @@ img#profile {
  color: grey;
  font-size: 10px;
  margin-top: 5px;
+}
+
+.creato-da h2 {
+ color: white;
+ font-size: 24px;
+ margin-top: 30px;
+ margin-bottom: 10px;
+}
+
+.creato-da p {
+ color: rgb(127, 129, 133);
+ font-size: 12px;
+ margin-bottom: 30px;
+}
+
+.creato-da .title p {
+ text-align: center;
+ color: white;
+ margin-top: 5px;
+ font-size: 14px;
+}
+
+.container-box-2 .box .round {
+ border-radius: 50%;
 }
 
 .call-to-action {
