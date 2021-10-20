@@ -9,88 +9,178 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="debug">
+
+    <!-- inizio main -->
     <main>
-        <div class="header-dx">
-            <div class="btn">
+        <!-- inizio col di sinistra -->
+        <div class="col-sn left">
+
+            <!-- inizio nav top -->
+            <div class="nav-top">
+
+                <!-- inizio logo -->
+                <div class="logo">
+                    <img src="img/logo-small.svg" alt="">
+                    <img src="/img/home.svg" alt="">
+                    <img src="img/search.svg" alt="">
+                    <img src="img/libreria.svg" alt="">
+                </div>
+                <!-- /logo -->
+
+                <!-- inizio nav-main -->
+                <div class="nav-main"></div>
+                <!-- /nav main -->
+
+                <!-- inizio nav-playlist -->
+                <div class="nav-playlist"></div>
+                <!-- /nav-playlist -->
+
+
+            </div>
+            <!-- /nav top -->
+
+            <!-- inizio nav bottom -->
+            <div class="nav-bottom">
+                <img id="download" src="img/download.svg" alt="">
+                <img id="profile" src="img/profile.svg" alt="">
+            </div>
+            <!-- / nav bottom -->
+
+
+        </div>
+        <!-- / col di sinistra -->
+
+        <!-- inizio col di dx -->
+        <div class="col-dx left">
+            <!-- upgrade -->
+            <div class="call-to-action">
                 <a class="btn-upgrade">Effettua l'upgrade</a>
             </div>
+            <!-- /upgrade -->
+            <div class="main-nav">
+                <nav>
+                    <ul>
+                        <li>in evidenza</li>
+                        <li>podcast</li>
+                        <li>classifiche</li>
+                        <li>generi e mood</li>
+                        <li>nuove uscite</li>
+                        <li>scopri</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="recently-played">
+                <p>Recently played</p>
+            </div>
+
+            <div class="container-box">
+                <div class="box">
+                    <img src="img/metal_lifting.jpg" alt="">
+
+                    <div class="title">
+                        <p>Heavy Metal</p>
+                    </div>
+
+                    <div class="subtitle">
+                        <p>Subtitle</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="img/stranger.jpeg" alt="">
+
+                    <div class="title">
+                        <p>Stranger Things, Vol.1</p>
+                    </div>
+
+                    <div class="subtitle">
+                        <p>Kyle Dixon & Michael Stein</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="img/aquietplace.jpeg" alt="">
+
+                    <div class="title">
+                        <p>A Quite Place</p>
+                    </div>
+
+                    <div class="subtitle">
+                        <p>Subtitle</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="img/split.jpeg" alt="">
+
+                    <div class="title">
+                        <p>Split</p>
+                    </div>
+
+                    <div class="subtitle">
+                        <p>Subtitle</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="img/cure.jpeg" alt="">
+
+                    <div class="title">
+                        <p>A Cure for wellness</p>
+                    </div>
+
+                    <div class="subtitle">
+                        <p>Subtitle</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="img/sinister.jpeg" alt="">
+
+                    <div class="title">
+                        <p>Sinister</p>
+                    </div>
+
+                    <div class="subtitle">
+                        <p>Subtitle</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
         </div>
+        <!-- / col di destra -->
 
-        <aside class="aside">
-            <nav class="aside-top">
-                <ul>
-                    <li>
-                        <img src="img/logo-small.svg" alt="">
-                    </li>
-                    <li>
-                        <img src="/img/home.svg" alt="">
-                    </li>
-                    <li>
-                        <img src="img/search.svg" alt="">
-                    </li>
-                    <li>
-                        <img src="img/libreria.svg" alt="">
-                    </li>
-                </ul>
-            </nav>
-
-            <nav class="aside-bottom">
-                <ul>
-                    <li>
-                        <img id="download" src="img/download.svg" alt="">
-                    </li>
-                    <li>
-                        <img id="profile" src="img/profile.svg" alt="">
-                    </li>
-                </ul>
-            </nav>
-
-        </aside>
-        <nav>
-            <ul class="main-nav-ul">
-                <li>prova</li>
-                <li>prova</li>
-                <li>prova</li>
-                <li>prova</li>
-                <li>prova</li>
-                <li>prova</li>
-                <li>prova</li>
-            </ul>
-        </nav>
-        <div class="recently-played">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-
-        </div>
     </main>
+    <!-- /main -->
 
+    <!-- inizio footer -->
     <footer>
         <div class="footer-sx">
             <div class="album">
-                <img src="img/sinister.jpeg" alt="" width="60">
+                <img src="img/sinister.jpeg" alt="">
 
                 <div class="titolo">
-                    <p>Sinister</p>
-                    <p>brano</p>
-                    <p>nome</p>
+                    <p id="autore">Sinister</p>
+                    <p>Brano</p>
+                    <p>Nome</p>
                 </div>
 
             </div>
             <div class="icon-container">
                 <div class="center">
-                    <i class="fas fa-random"></i>
-                    <i class="fas fa-step-backward"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
                 </div>
 
 
@@ -118,8 +208,21 @@
 
         </div>
 
-        <div class="footer-dx"></div>
+        <div class="footer-dx">
+            <div class="controlli">
+                <i class="fas fa-sliders-h"></i>
+                <i class="fas fa-desktop"></i>
+                <i class="fas fa-volume-up"></i>
+                <div class="progress-bar2">
+                    <div class="progress-line2"></div>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
     </footer>
+    <!-- / footer -->
 
 </body>
 
