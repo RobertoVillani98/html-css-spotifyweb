@@ -15,7 +15,7 @@ body {
 /* main */
 main {
  width: 100%;
- height: calc(100vh - 100px);
+ height: calc(100vh - 80px);
 }
 
 main::after {
@@ -30,8 +30,28 @@ main::after {
  justify-content: center;
 }
 
+.description {
+ display: flex;
+ align-items: center;
+ width: 100%;
+}
+
+.description p {
+ margin-left: 10px;
+ width: 210px;
+}
+
+.logo p {
+ font-size: 14px;
+}
+
+.logo .description p {
+ color: rgb(127, 129, 133);
+}
+
 .logo,
-.nav-bottom img {
+.nav-bottom,
+.nav-main img {
  width: 30px;
 }
 
@@ -52,15 +72,46 @@ img#profile {
  border-radius: 50%;
 }
 
+.playlist-nav {
+ height: 40%;
+ width: 210px;
+ margin-top: 20px;
+ overflow-y: auto;
+}
+
+.più {
+ padding: 10px 10px;
+ background-color: grey;
+ margin-right: 5px;
+}
+
+.playlist-nav h3 {
+ color: white;
+ text-transform: uppercase;
+ font-size: 16px;
+ margin-bottom: 10px;
+}
+
+.crea-playlist {
+ display: flex;
+ align-items: center;
+ flex-wrap: wrap;
+}
+
+.playlist-nav .crea-playlist p {
+ color: rgb(127, 129, 133);
+}
+
+.new-playlist {
+ margin-top: 10px;
+ line-height: 2;
+}
+
 .col-sn {
  width: 50px;
  height: 100%;
  min-height: 480px;
  background-color: black;
-}
-
-.nav-playlist {
- display: none;
 }
 
 .col-dx {
@@ -186,7 +237,7 @@ img#profile {
 /* footer */
 footer {
  width: 100%;
- height: 100px;
+ height: 80px;
  background-color: rgb(44, 44, 44);
  position: fixed;
  z-index: 1;
@@ -197,6 +248,7 @@ footer {
  height: 100%;
  width: 30%;
  display: flex;
+ padding: 0 5px;
 }
 
 .album {
@@ -274,6 +326,12 @@ footer {
  font-size: 12px;
 }
 
+.logo p {
+ display: flex;
+ color: white;
+ flex-direction: row;
+}
+
 .top i {
  color: white;
  margin: 10px 11px 5px 10px;
@@ -304,10 +362,12 @@ footer {
  align-items: center;
  justify-content: flex-end;
  margin-left: 10px;
+ padding: 0 5px;
 }
 
 .controlli {
  display: flex;
+ align-items: center;
 }
 
 .controlli i {
