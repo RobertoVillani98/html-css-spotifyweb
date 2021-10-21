@@ -228,6 +228,7 @@ img#profile {
  z-index: 2;
  text-align: right;
  padding: 20px;
+ line-height: 45px;
 }
 
 .btn-upgrade {
@@ -399,8 +400,6 @@ footer {
  border-radius: 10px;
 }
 
-/* debug */
-
 /* media query */
 @media screen and (min-width: 480px) {
  .col-sn {
@@ -417,10 +416,6 @@ footer {
 
  .nav-bottom {
   align-items: flex-start;
- }
-
- .nav-playlist {
-  /* display: block; */
  }
 
  .col-dx {
