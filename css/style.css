@@ -191,6 +191,18 @@ img#profile {
  font-size: 14px;
 }
 
+nav ul li:hover {
+ border-bottom: 1px solid green;
+ transition: 0.3s;
+ color: white;
+ cursor: pointer;
+}
+
+.description p:hover {
+ color: white;
+ cursor: pointer;
+}
+
 .subtitle {
  text-align: center;
  color: grey;
