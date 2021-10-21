@@ -30,6 +30,12 @@ main::after {
  justify-content: center;
 }
 
+#logo-big {
+ width: 210px;
+ margin-bottom: 50px;
+ margin-top: 15px;
+}
+
 .description {
  display: flex;
  align-items: center;
@@ -401,6 +407,10 @@ footer {
   width: 210px;
  }
 
+ #logo-small {
+  display: none;
+ }
+
  .nav-top {
   justify-content: flex-start;
  }
@@ -419,5 +429,19 @@ footer {
 
  .call-to-action {
   width: calc(100% - 210px);
+ }
+}
+
+@media screen and (max-width: 480px) {
+ #logo-big {
+  display: none;
+ }
+
+ .description p {
+  display: none;
+ }
+
+ .playlist-nav {
+  display: none;
  }
 }
